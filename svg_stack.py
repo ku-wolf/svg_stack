@@ -676,6 +676,9 @@ stdout.
     parser.add_option("--direction",type='str',
                       default='vertical',
                       help='horizontal or vertical (or h or v)')
+    parser.add_option('--dest',type='str',
+                     default='tmp.svg',
+                     help='destination svg file')
     (options, args) = parser.parse_args()
     fnames = args
 
@@ -691,8 +694,8 @@ stdout.
     else:
         margin_px = 0
 
-    if 0:
-        fd = open('tmp.svg',mode='w')
+    if options.dest:
+        fd = open(options.dest, mode='w')
     else:
         fd = sys.stdout
 
