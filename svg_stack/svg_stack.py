@@ -711,6 +711,5 @@ stdout.
     layout.setSpacing(margin_px)
     doc.setLayout(layout)
     doc.save( fd )
+    print " ".join(fnames)
 
-if __name__=='__main__':
-    main()
