@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 """Setup module for svg_stack pkg."""
 from setuptools import setup, find_packages
 import os

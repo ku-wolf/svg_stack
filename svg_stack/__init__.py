@@ -153,7 +153,7 @@ class Document(object):
         self._layout = None
     def setLayout(self,layout):
         self._layout = layout
-    def save(self,fileobj,debug_boxes=False,**kwargs):
+    def save(self, fileobj, debug_boxes=False, **kwargs):
         if self._layout is None:
             raise ValueError('No layout, cannot save.')
         accum = LayoutAccumulator(**kwargs)
