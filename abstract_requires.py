@@ -1,3 +1,4 @@
 requires = [
-    "appdirs"
+    "appdirs",
+    "lxml"
 ]
